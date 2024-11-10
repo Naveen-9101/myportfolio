@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> My Portfolio </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+         <div class="logo"> NAVEEN V</div>
+          <div>
+            <ul class="nav-links">
+                <li><a href="#about"> About</a></li>
+                <li><a href="#experience"> Experience</a></li>
+                <li><a href="#project"> Project</a></li>
+                <li><a href="#contact"> Contact</a></li>
+            </ul>
+         </div>
+        </nav>
+        <nav id="hamburgur-nav">
+            <div class="logo"> NAVEEN V</div>
+            <div class="hamburgur-menu">
+                <div class="hamburgur-icon" onclick="togglemenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()"> About</a></li>
+                <li><a href="#experience" onclick="togglemenu()"> Experience</a></li>
+                <li><a href="#project" onclick="togglemenu()"> Project</a></li>
+                <li><a href="#contact" onclick="togglemenu()"> Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./naveen.jpg" >
+            </div>
+            <div class="section-test">
+                <p class="section-test-p1"> Hello I'm</p>
+                <h1 class="title"> NAVEEN </h1>
+                <p class="section-test-p2"> Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" 
+                    onclick="window.open('c:\Users\user\Downloads\web program 3.docx')"> 
+                    Download CV 
+                    </button>
+                    <button class="btn btn-color-1" 
+                    onclick="location.href='c:\Users\user\Downloads\web program 3.docx'"> 
+                    Contact Info
+                   </button>
+                </div>
+                <div id="social-container">
+                    <img src="./github.png" class="icon"
+                     onclick="location.href='https://linkedin.com/'"/>
+                    <img src="./linkedin.png" class="icon"
+                     onclick="location.href='https://github.com/'"/>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section-test-p2"> Get To Know More</p>
+            <h1 class="title"> About Me</h1>
+            <div class="section-container"></div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./experience.png"
+                         class="icon">
+                         <h3> Experience</h3>
+                         <p> Beginner <br> Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./education.png"
+                         class="icon">
+                         <h3> Education</h3>
+                         <p> B.E Engineeering <br> PACET</p>
+
+                    </div>
+                </div>
+                <p> A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
+                    <br> <br>A successful website does three things: It attracts the right kinds of visitors. Guides them to the main services or products you offer. Collect Contact details for future ongoing relation.
+                    
+                </p>
+            </div>
+            <img src="./arrow.png" 
+            height="50" width="50"   class="icon-arrow" 
+            onclick="location.href ='./#experience'"/>
+        </section>
+        <section id="experience">
+            <p class="section-test-p2"> Explore My</p>
+            <h1 class="title"> Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3> HTML</h3>
+                                    <p> Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p> Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3> JavaScript</h3>
+                                    <p> Basics</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3>TypeScript</h3>
+                                    <p> Beginner</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3> React</h3>
+                                    <p> Basics</p>
+                                </div>
+                            </article>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3>Node JS</h3>
+                                    <p> Basics</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3>GraphQL </h3>
+                                    <p> Basics</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark.png"
+                                class="icon">
+                                <div>
+                                    <h3> Git</h3>
+                                    <p> Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./checkmark.png" 
+            height="50" width="50"   class="icon-arrow" 
+            onclick="location.href ='./#project'"/>
+        </section>
+        <section id="project">
+            <p class="section-test-p2"> Browse My Recent</p>
+            <h1 class="title"> Project</h1>
+            <div class="experience-details-container">
+                <div class="about-containers"></div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./np.png"
+                         height="400" width="800" class="projo">
+                    </div>
+                    <h2 class="experience-sub-title projo-title"> Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projo-btn" 
+                        onclick="location.href='https://github.com'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 projo-btn" 
+                        onclick="location.href='https://github.com'">
+                           Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+           <img src="./arrow.png" 
+            height="50" width="50"   class="icon-arrow" 
+            onclick="location.href ='./#project'"/>
+        </section>
+        <section id="contact">
+            <p class="section-test-p2"> Get in touch</p>
+            <h2 class="title"> Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-in">
+                    <img src="./email.png"
+                     class=" icon contact-icon email-icon">
+                     <p><a href="mailto:examplemail@gmail.com"> Example@gamil.com</a></p>
+                </div>
+               
+                    <div class="contact-in">
+                        <img src="./linkedin1.png"
+                         class=" icon contact-icon link-icon">
+                         <p><a href="https://www.linkedin.com"> linkedin</a></p>
+                    </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about"> About</a></li>
+                        <li><a href="#experience"> Experience</a></li>
+                        <li><a href="#project"> Project</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="paragraph"> Copyright &#169; 2024 Naveen. All Rights Reserved</p>
+        </footer>
+
+        
+
+        
+        
+      
+        
+        <script src="script.js"></script>
+    </body>
+</html>
+    
